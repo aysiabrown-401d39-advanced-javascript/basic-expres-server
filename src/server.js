@@ -19,7 +19,7 @@ app.use(logger);
 app.use(validator);
 
 // person route
-app.get('/person', getPerson)
+app.get('/person', validator, getPerson);
 
 
 // person handler 
