@@ -25,7 +25,7 @@ app.get('/person', getPerson)
 // person handler 
 function getPerson(req, res, next) {
     let { name } = req.query;
-    res.status(200).json({"name": name })
+    res.status(200).json({ name: name })
 }
 
 // error & not found handling for all routes
